@@ -15,4 +15,4 @@ Configura dominio público, título y descripción definitivos, sitemap.xml, rob
 
 ## Coolify
 
-Selecciona Dockerfile, directorio `/`, puerto expuesto `80` y ruta de salud `/healthz`. Define la variable de ejecución `API_UPSTREAM` con la URL de la API existente, sin barra final ni ruta, por ejemplo `https://bknmed.sglabs.lat` si ese dominio es accesible desde el contenedor. Si se usa un nombre de red privada, ambas aplicaciones deben compartir red. Nginx reenvía `/api/` a la API. El backend necesita `LEADS_WEBHOOK_URL` con la URL de producción del flujo n8n.
+Selecciona Dockerfile, directorio `/`, puerto expuesto `8081` y ruta de salud `/healthz`. Define la variable de ejecución `API_UPSTREAM` con la URL de la API existente, sin barra final ni ruta, por ejemplo `https://bknmed.sglabs.lat` si ese dominio es accesible desde el contenedor. Si se usa un nombre de red privada, ambas aplicaciones deben compartir red. Nginx reenvía `/api/` a la API. El backend necesita `LEADS_WEBHOOK_URL` con la URL de producción del flujo n8n.
