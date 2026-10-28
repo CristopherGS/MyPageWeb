@@ -16,3 +16,15 @@ Configura dominio público, título y descripción definitivos, sitemap.xml, rob
 ## Coolify
 
 Selecciona Dockerfile, directorio `/`, puerto expuesto `8081` y ruta de salud `/healthz`. Define la variable de ejecución `API_UPSTREAM` con la URL de la API existente, sin barra final ni ruta, por ejemplo `https://bknmed.sglabs.lat` si ese dominio es accesible desde el contenedor. Si se usa un nombre de red privada, ambas aplicaciones deben compartir red. Nginx reenvía `/api/` a la API. El backend necesita `LEADS_WEBHOOK_URL` con la URL de producción del flujo n8n.
+
+### Dirección del backend
+
+En la aplicación **MyPageWeb** de Coolify, abre Environment Variables y agrega una variable disponible en ejecución:
+
+```text
+API_UPSTREAM=https://DOMINIO-REAL-DE-TU-BACKEND
+```
+
+Sustituye el valor de ejemplo por el dominio real del backend, o por `http://NOMBRE-INTERNO:8080` si ambos contenedores comparten red. No incluyas `/api`, rutas, barra final ni credenciales. No uses `localhost`, porque apunta al contenedor de la web. Guarda y redespliega MyPageWeb. Si falta la variable, el contenedor no arrancará y explicará el problema en sus registros.
+
+El navegador envía el formulario a `https://TU-DOMINIO-WEB/api/v1/public/leads`; Nginx lo reenvía al backend configurado. La URL que aparece en el navegador es la de la web, no revela el destino interno. Si Cloudflare desafía ese POST en el dominio de la web, cambiar API_UPSTREAM no elimina ese desafío: revisa Security Events y la regla correspondiente. Si el dominio público del backend también usa Cloudflare y desafía la conexión de Nginx, usa una dirección privada accesible o ajusta su regla.
