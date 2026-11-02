@@ -1,1 +1,333 @@
-<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Desarrollo de software, páginas web y automatizaciones a medida para hacer crecer tu negocio."><meta name="robots" content="index, follow"><title>Estudio Digital | Software que impulsa ideas</title><link rel="stylesheet" href="style.css"></head><body><header><a class="brand" href="#inicio">● <span>ESTUDIO DIGITAL</span></a><nav><a href="#servicios" data-i="navServices">Servicios</a><a href="#calculadora" data-i="navCalc">Calculadora</a><a href="#contacto" data-i="navContact">Contacto</a><button id="lang" aria-label="Change language">EN / ES</button></nav></header><main><section class="hero" id="inicio"><div><p class="eyebrow" data-i="eyebrow">DESARROLLO · DISEÑO · AUTOMATIZACIÓN</p><h1 data-i="headline">Tus ideas merecen <em>funcionar en grande.</em></h1><p class="lead" data-i="intro">Creamos experiencias digitales y herramientas a medida para convertir tus retos en oportunidades.</p><div class="actions"><a class="button" href="#contacto" data-i="cta">Hablemos de tu proyecto ↗</a><a class="textlink" href="#calculadora" data-i="estimate">Calcula una estimación ↓</a></div></div><div class="visual" aria-hidden="true"><div class="window"><div class="windowtop">● ● ● <span>YOUR NEXT PROJECT</span></div><div class="code"><span>01</span> idea<span class="purple"> → </span>estrategia<br><span>02</span> diseño<span class="purple"> → </span>experiencia<br><span>03</span> código<span class="purple"> → </span>impacto<br><br><b>Construyamos<br>algo extraordinario<span class="purple">.</span></b></div><div class="orb">✳</div></div><div class="floating">✦ &nbsp; DIGITAL, HECHO A TU MEDIDA</div></div></section><div class="ticker">ESTRATEGIA &nbsp; ✳ &nbsp; DISEÑO &nbsp; ✳ &nbsp; DESARROLLO &nbsp; ✳ &nbsp; AUTOMATIZACIÓN &nbsp; ✳ &nbsp; ESTRATEGIA &nbsp; ✳ &nbsp; DISEÑO</div><section id="servicios" class="section"><div class="sectionhead"><p class="eyebrow">01 / WHAT WE DO</p><h2 data-i="servicesTitle">De la idea al <em>producto real.</em></h2><p data-i="servicesIntro">Soluciones pensadas para tus objetivos, con atención a cada detalle.</p></div><div class="services"><article><span>01 / WEB</span><h3 data-i="s1">Sitios web que conectan</h3><p data-i="s1p">Páginas rápidas, adaptables y preparadas para buscadores que presentan tu negocio con claridad.</p></article><article><span>02 / SOFTWARE</span><h3 data-i="s2">Software a medida</h3><p data-i="s2p">Aplicaciones y sistemas diseñados alrededor de tus procesos y necesidades.</p></article><article><span>03 / AUTOMATION</span><h3 data-i="s3">Automatización inteligente</h3><p data-i="s3p">Conecta herramientas y reduce tareas repetitivas para dedicar más tiempo a lo importante.</p></article></div></section><section id="calculadora" class="section calculator"><div><p class="eyebrow">02 / ESTIMATE</p><h2 data-i="calcTitle">Empecemos con <em>una idea de inversión.</em></h2><p data-i="calcDesc">Selecciona lo que necesitas para obtener un rango orientativo. Cada proyecto es único y se cotiza después de conversar.</p><small data-i="disclaimer">Estimación ilustrativa en USD, no constituye una cotización final.</small></div><div class="calcbox"><label for="type" data-i="type">Tipo de proyecto</label><select id="type"><option value="600" data-i="option1">Sitio web informativo</option><option value="1200" data-i="option2">Tienda o web interactiva</option><option value="2500" data-i="option3">Aplicación a medida</option></select><p data-i="extras">¿Qué necesitas incluir?</p><label class="check"><input type="checkbox" value="400" data-extra> <span data-i="extra1">Integraciones y automatización</span></label><label class="check"><input type="checkbox" value="300" data-extra> <span data-i="extra2">Panel de administración</span></label><label class="check"><input type="checkbox" value="250" data-extra> <span data-i="extra3">Contenido multilingüe</span></label><div class="result"><span data-i="range">RANGO ESTIMADO</span><strong id="price"></strong></div><a href="#contacto" class="button dark" data-i="discuss">Conversar sobre mi proyecto ↗</a></div></section><section class="section contact" id="contacto"><div><p class="eyebrow">03 / LET’S TALK</p><h2 data-i="contactTitle">Tu próximo proyecto <em>empieza aquí.</em></h2><p data-i="contactDesc">Cuéntanos qué tienes en mente. Revisaremos los detalles para darte una respuesta personalizada.</p><p class="contactnote" data-i="privacy">Tus datos se usarán para responder a esta solicitud.</p></div><form id="form"><label data-i="name" for="name">Nombre</label><input id="name" maxlength="100" required><label for="email">Email</label><input id="email" type="email" maxlength="200" required><label data-i="project" for="project">Tipo de proyecto</label><input id="project" maxlength="100" required><label data-i="message" for="message">Cuéntanos tu idea</label><textarea id="message" maxlength="2000" required rows="4"></textarea><button class="button" data-i="send">Enviar solicitud ↗</button><p id="status" role="status"></p></form></section></main><footer><a class="brand" href="#inicio">● ESTUDIO DIGITAL</a><span data-i="footer">Ideas que toman forma digital.</span><span>© 2026</span></footer><script src="app.js"></script></body></html>
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<!-- ===== SEO base ===== -->
+<title>Desarrollador Freelance en Guatemala | Webs y Software a Medida · SG Labs</title>
+<meta name="description" content="Desarrollador freelance en Ciudad de Guatemala. Creo páginas web, software y automatizaciones a la medida. Tú eres dueño del 100% del código: sin mensualidades y totalmente personalizable.">
+<meta name="keywords" content="desarrollador freelance Guatemala, programador Guatemala, páginas web Guatemala, software a la medida Guatemala, automatización n8n Guatemala, desarrollo web Ciudad de Guatemala">
+<meta name="author" content="SG Labs">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://sglabs.lat/">
+
+<!-- Idiomas (el parámetro ?lang cambia el contenido de la página) -->
+<link rel="alternate" hreflang="es" href="https://sglabs.lat/?lang=es">
+<link rel="alternate" hreflang="en" href="https://sglabs.lat/?lang=en">
+<link rel="alternate" hreflang="x-default" href="https://sglabs.lat/">
+
+<!-- Geolocalización (SEO local Guatemala) -->
+<meta name="geo.region" content="GT-GU">
+<meta name="geo.placename" content="Ciudad de Guatemala">
+<meta name="geo.position" content="14.6349;-90.5069">
+<meta name="ICBM" content="14.6349, -90.5069">
+
+<!-- ===== Open Graph / redes ===== -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SG Labs">
+<meta property="og:locale" content="es_GT">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:title" content="Desarrollador Freelance en Guatemala · SG Labs">
+<meta property="og:description" content="Webs, software y automatizaciones a la medida. Tú eres dueño de todo: sin mensualidades y personalizable a tu antojo.">
+<meta property="og:url" content="https://sglabs.lat/">
+<meta property="og:image" content="https://sglabs.lat/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Desarrollador Freelance en Guatemala · SG Labs">
+<meta name="twitter:description" content="Webs, software y automatizaciones a la medida. Tú eres dueño de todo, sin mensualidades.">
+<meta name="twitter:image" content="https://sglabs.lat/og-image.png">
+
+<meta name="theme-color" content="#7855e9">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%237855e9'/%3E%3C/svg%3E">
+
+<!-- Rendimiento de fuentes -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="style.css">
+
+<!-- ===== Datos estructurados (Google) ===== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://sglabs.lat/#business",
+      "name": "SG Labs",
+      "description": "Desarrollador freelance en Guatemala. Páginas web, software a la medida y automatizaciones. El cliente es dueño del 100% del código, sin mensualidades.",
+      "url": "https://sglabs.lat/",
+      "image": "https://sglabs.lat/og-image.png",
+      "priceRange": "$$",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Guatemala"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Ciudad de Guatemala",
+        "addressRegion": "Guatemala",
+        "addressCountry": "GT"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 14.6349,
+        "longitude": -90.5069
+      },
+      "founder": {
+        "@type": "Person",
+        "name": "SG Labs",
+        "jobTitle": "Desarrollador de software freelance"
+      },
+      "knowsLanguage": ["es", "en"],
+      "makesOffer": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Desarrollo de páginas web a la medida" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Software y aplicaciones a la medida" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Automatización de procesos e integraciones" } }
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://sglabs.lat/#website",
+      "url": "https://sglabs.lat/",
+      "name": "SG Labs",
+      "inLanguage": "es",
+      "publisher": { "@id": "https://sglabs.lat/#business" }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://sglabs.lat/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Me cobras una mensualidad?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Pagas el desarrollo una sola vez. Lo único recurrente, y totalmente opcional, es la nube o el hosting si deseas que yo te lo gestione; también puedes contratarlo a tu nombre y no pagarme nada mensual."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿De quién es el código y la página al final?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Tuyo, al 100%. Te entrego el código fuente completo y todos los accesos. No retengo nada: tú te quedas con todo."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Puedo modificar el sitio o el sistema después?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí. Todo se entrega pensado para que tú o tu equipo lo puedan modificar a su antojo cuando quieran, sin depender de mí."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Trabajas en toda Guatemala?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí. Estoy en Ciudad de Guatemala y trabajo de forma remota con clientes de todo el país."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cómo empiezo y pido un presupuesto?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Usa la calculadora para una idea del rango y llena el formulario con tu proyecto. Te respondo personalmente para conversar y prepararte un presupuesto a la medida."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+<header>
+  <a class="brand" href="#inicio">● <span>SG LABS</span></a>
+  <nav>
+    <a href="#servicios" data-i="navServices">Servicios</a>
+    <a href="#filosofia" data-i="navPhilosophy">Filosofía</a>
+    <a href="#calculadora" data-i="navCalc">Calculadora</a>
+    <a href="#contacto" data-i="navContact">Contacto</a>
+    <button id="lang" aria-label="Change language / Cambiar idioma">EN / ES</button>
+  </nav>
+</header>
+
+<main>
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="inicio">
+    <div>
+      <p class="eyebrow" data-i="eyebrow">DESARROLLADOR FREELANCE · GUATEMALA</p>
+      <h1 data-i="headline">Software a tu medida, <em>y 100% tuyo.</em></h1>
+      <p class="lead" data-i="intro">Soy desarrollador freelance en Guatemala. Creo páginas web, software y automatizaciones hechas a tu medida, y te las entrego completas: el código es tuyo, sin mensualidades ni ataduras.</p>
+      <div class="actions">
+        <a class="button" href="#contacto" data-i="cta">Pedir mi presupuesto ↗</a>
+        <a class="textlink" href="#calculadora" data-i="estimate">Calcular una estimación ↓</a>
+      </div>
+    </div>
+    <div class="visual" aria-hidden="true">
+      <div class="window">
+        <div class="windowtop">● ● ● <span>TU PRÓXIMO PROYECTO</span></div>
+        <div class="code">
+          <span>01</span> idea<span class="purple"> → </span>estrategia<br>
+          <span>02</span> diseño<span class="purple"> → </span>experiencia<br>
+          <span>03</span> código<span class="purple"> → </span>tú eres dueño<br><br>
+          <b>Hecho en Guatemala<span class="purple">,</span><br>hecho a tu medida<span class="purple">.</span></b>
+        </div>
+        <div class="orb">✳</div>
+      </div>
+      <div class="floating">✦ &nbsp; TÚ TE QUEDAS CON TODO</div>
+    </div>
+  </section>
+
+  <div class="ticker">GUATEMALA &nbsp; ✳ &nbsp; DISEÑO &nbsp; ✳ &nbsp; DESARROLLO &nbsp; ✳ &nbsp; AUTOMATIZACIÓN &nbsp; ✳ &nbsp; SIN MENSUALIDADES &nbsp; ✳ &nbsp; CÓDIGO TUYO</div>
+
+  <!-- ===== SERVICIOS ===== -->
+  <section id="servicios" class="section">
+    <div class="sectionhead">
+      <p class="eyebrow">01 / QUÉ HAGO</p>
+      <h2 data-i="servicesTitle">De la idea al <em>producto real.</em></h2>
+      <p data-i="servicesIntro">Soluciones pensadas para tus objetivos, con atención a cada detalle y pensadas para que crezcan contigo.</p>
+    </div>
+    <div class="services">
+      <article>
+        <span>01 / WEB</span>
+        <h3 data-i="s1">Sitios web que conectan</h3>
+        <p data-i="s1p">Páginas rápidas, adaptables a celular y preparadas para buscadores que presentan tu negocio con claridad.</p>
+      </article>
+      <article>
+        <span>02 / SOFTWARE</span>
+        <h3 data-i="s2">Software a la medida</h3>
+        <p data-i="s2p">Aplicaciones y sistemas diseñados alrededor de tus procesos reales, no al revés.</p>
+      </article>
+      <article>
+        <span>03 / AUTOMATIZACIÓN</span>
+        <h3 data-i="s3">Automatización inteligente</h3>
+        <p data-i="s3p">Conecto tus herramientas y elimino tareas repetitivas para que dediques tiempo a lo que importa.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===== FILOSOFÍA / PROPIEDAD TOTAL ===== -->
+  <section id="filosofia" class="section philosophy">
+    <div class="sectionhead">
+      <p class="eyebrow">02 / MI FORMA DE TRABAJAR</p>
+      <h2 data-i="philTitle">No te vendo una mensualidad. <em>Te entrego algo tuyo.</em></h2>
+      <p data-i="philIntro">Soy desarrollador guatemalteco y mi meta es subir el nivel del desarrollo de software en el país: trabajo serio, cercano y accesible. Por eso no trabajo con suscripciones que te amarren. Construyo tu proyecto a tu medida y te lo entrego completo para que lo uses y lo modifiques a tu antojo.</p>
+    </div>
+    <div class="pillars">
+      <article>
+        <div class="pico">✓</div>
+        <h3 data-i="p1">Tú eres dueño de todo</h3>
+        <p data-i="p1p">Te entrego el 100% del código fuente y todos los accesos. No me quedo con nada: tú te quedas con todo.</p>
+      </article>
+      <article>
+        <div class="pico">∅</div>
+        <h3 data-i="p2">Sin mensualidades</h3>
+        <p data-i="p2p">No vendo suscripciones. Pagas tu proyecto una vez y es tuyo. Nada de cuotas obligatorias cada mes.</p>
+      </article>
+      <article>
+        <div class="pico">⚙</div>
+        <h3 data-i="p3">Personalizable a tu antojo</h3>
+        <p data-i="p3p">Todo queda hecho para que tú o tu equipo lo cambien cuando quieran, sin depender de mí para siempre.</p>
+      </article>
+      <article>
+        <div class="pico">☁</div>
+        <h3 data-i="p4">Solo la nube, si la quieres</h3>
+        <p data-i="p4p">Lo único que puede ser mensual, y es opcional, es la nube o el hosting. Y puedes contratarlo a tu nombre.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===== CALCULADORA ===== -->
+  <section id="calculadora" class="section calculator">
+    <div>
+      <p class="eyebrow">03 / PRESUPUESTO</p>
+      <h2 data-i="calcTitle">Hagamos una <em>idea de inversión.</em></h2>
+      <p data-i="calcDesc">Selecciona lo que necesitas para obtener un rango orientativo en quetzales y dólares. Cada proyecto es único y se cotiza con un presupuesto formal después de conversar.</p>
+      <small data-i="disclaimer">Estimación ilustrativa; no es una cotización final. Referencia aprox. Q8 = US$1.</small>
+    </div>
+    <div class="calcbox">
+      <label for="type" data-i="type">Tipo de proyecto</label>
+      <select id="type">
+        <option value="600" data-i="option1">Sitio web informativo / landing</option>
+        <option value="1200" data-i="option2">Sitio con catálogo, reservas o tienda</option>
+        <option value="2500" data-i="option3">Aplicación o sistema a la medida</option>
+      </select>
+      <p data-i="extras">¿Qué necesitas incluir?</p>
+      <label class="check"><input type="checkbox" value="400" data-extra> <span data-i="extra1">Integraciones y automatización</span></label>
+      <label class="check"><input type="checkbox" value="300" data-extra> <span data-i="extra2">Panel de administración</span></label>
+      <label class="check"><input type="checkbox" value="250" data-extra> <span data-i="extra3">Contenido en dos idiomas</span></label>
+      <div class="result">
+        <span data-i="range">RANGO ESTIMADO</span>
+        <strong id="price"></strong>
+      </div>
+      <a href="#contacto" class="button dark" data-i="discuss">Conversar sobre mi proyecto ↗</a>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section id="faq" class="section faq">
+    <div class="sectionhead">
+      <p class="eyebrow">04 / PREGUNTAS FRECUENTES</p>
+      <h2 data-i="faqTitle">Lo que la gente <em>siempre pregunta.</em></h2>
+    </div>
+    <div class="faqlist">
+      <details>
+        <summary data-i="q1">¿Me cobras una mensualidad?</summary>
+        <p data-i="a1">No. Pagas el desarrollo una sola vez. Lo único recurrente —y opcional— es la nube o el hosting si quieres que yo te lo gestione; también puedes contratarlo a tu nombre.</p>
+      </details>
+      <details>
+        <summary data-i="q2">¿De quién es el código al final?</summary>
+        <p data-i="a2">Tuyo, al 100%. Te entrego el código fuente y todos los accesos. No retengo nada.</p>
+      </details>
+      <details>
+        <summary data-i="q3">¿Puedo modificar el sitio después?</summary>
+        <p data-i="a3">Sí. Todo se entrega para que tú o tu equipo lo modifiquen a su antojo, cuando quieran.</p>
+      </details>
+      <details>
+        <summary data-i="q4">¿Trabajas en toda Guatemala?</summary>
+        <p data-i="a4">Sí. Estoy en Ciudad de Guatemala y trabajo de forma remota con clientes de todo el país.</p>
+      </details>
+      <details>
+        <summary data-i="q5">¿Cómo pido un presupuesto?</summary>
+        <p data-i="a5">Usa la calculadora para una idea del rango y llena el formulario con tu proyecto. Te respondo personalmente para conversar y prepararte un presupuesto a la medida.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- ===== CONTACTO ===== -->
+  <section class="section contact" id="contacto">
+    <div>
+      <p class="eyebrow">05 / HABLEMOS</p>
+      <h2 data-i="contactTitle">Tu próximo proyecto <em>empieza aquí.</em></h2>
+      <p data-i="contactDesc">Cuéntame qué tienes en mente. Reviso los detalles y te respondo personalmente para darte una respuesta y un presupuesto a tu medida.</p>
+      <p class="contactnote" data-i="privacy">Tus datos se usarán únicamente para responder a esta solicitud.</p>
+    </div>
+    <form id="form">
+      <label data-i="name" for="name">Nombre</label>
+      <input id="name" maxlength="100" required>
+      <label for="email">Email</label>
+      <input id="email" type="email" maxlength="200" required>
+      <label data-i="project" for="project">Tipo de proyecto</label>
+      <input id="project" maxlength="100" required>
+      <label data-i="message" for="message">Cuéntame tu idea</label>
+      <textarea id="message" maxlength="2000" required rows="4"></textarea>
+      <button class="button" data-i="send">Enviar solicitud ↗</button>
+      <p id="status" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <a class="brand" href="#inicio">● SG LABS</a>
+  <span data-i="footer">Desarrollo de software freelance en Guatemala.</span>
+  <span>© 2026 SG Labs</span>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
