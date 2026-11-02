@@ -1,6 +1,11 @@
-# Sitio de servicios de programación
+# SG Labs — Desarrollador freelance en Guatemala
 
-Sitio estático en español e inglés; detecta el idioma del navegador y permite cambiarlo. Los importes en USD son ejemplos editables en app.js y no son cotizaciones reales. Sustituye «Estudio Digital» por tu marca y revisa los textos y precios antes de publicar.
+Sitio estático (una sola página) en español e inglés; detecta el idioma del navegador y permite cambiarlo con el botón EN/ES, además del parámetro `?lang=es|en` para enlaces por idioma. Reposicionado para un desarrollador freelance en Guatemala, con la filosofía de propiedad total (el cliente es dueño del 100% del código, sin mensualidades). Los importes son ejemplos editables en `app.js` y no son cotizaciones reales.
+
+Para cambiar la marca o el dominio:
+- Marca «SG Labs»: en `index.html` (cabecera, pie y datos estructurados) y en `app.js` (`document.title`).
+- Dominio `https://sglabs.lat`: en `index.html` (`canonical`, `hreflang`, Open Graph y JSON-LD), `robots.txt` y `sitemap.xml`.
+- Imagen social opcional: añade un archivo `og-image.png` (1200×630) a la raíz; ya está referenciado en las etiquetas Open Graph/Twitter. Si lo agregas, inclúyelo también en la línea `COPY` del `Dockerfile`.
 
 ## Integración
 
@@ -11,7 +16,15 @@ Sitio estático en español e inglés; detecta el idioma del navegador y permite
 
 ## SEO
 
-Configura dominio público, título y descripción definitivos, sitemap.xml, robots.txt, URL canónica y versiones por idioma cuando se conozcan las URLs. Registra el sitio en Search Console. No se puede garantizar una posición en buscadores.
+Ya incluido: título y descripción orientados a «desarrollador freelance en Guatemala», URL canónica, etiquetas geo (GT), Open Graph/Twitter, `hreflang` es/en, `robots.txt`, `sitemap.xml` y datos estructurados JSON-LD (`ProfessionalService` con ubicación en Ciudad de Guatemala + `FAQPage`).
+
+Pasos finales para posicionar:
+1. Publica con el dominio definitivo (si no es `sglabs.lat`, reemplázalo en los archivos indicados arriba).
+2. Registra el sitio en Google Search Console y envía `https://sglabs.lat/sitemap.xml`.
+3. Crea o reclama el perfil de **Google Business Profile** (negocio en Ciudad de Guatemala) con el mismo nombre y datos; es lo que más ayuda al posicionamiento local.
+4. Consigue enlaces y menciones (redes, directorios locales) y mantén el nombre/ubicación consistentes.
+
+Nota: ningún cambio garantiza una posición en buscadores; el posicionamiento depende de Google y toma tiempo.
 
 ## Coolify
 

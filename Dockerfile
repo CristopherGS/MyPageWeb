@@ -1,6 +1,6 @@
 FROM nginx:1.28-alpine
 RUN apk add --no-cache ca-certificates
-COPY index.html app.js style.css /usr/share/nginx/html/
+COPY index.html app.js style.css robots.txt sitemap.xml /usr/share/nginx/html/
 COPY nginx.conf.template /etc/nginx/templates/default.conf.template
 COPY --chmod=755 scripts/validate-upstream.sh /docker-entrypoint.d/15-validate-upstream.sh
 ENV NGINX_ENVSUBST_FILTER="^API_UPSTREAM$"
